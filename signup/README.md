@@ -1,10 +1,7 @@
-# Created a Login and Sigup Page using  HTML and CSS.
+# Created a Signup Page using HTML,CSS and JavaSript.
 
-## Reference Image:
-![](Reference%20Image.PNG)
-
-## Login/Signup Page Images:
-
-![](./screenshot/login%20page.png)
+## Signup Page Image:
 ***
 ![](./screenshot/signup%20page.png)
+
+
