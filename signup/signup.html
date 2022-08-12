@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="signup.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <script src="https://kit.fontawesome.com/88b74e402b.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container" id="signup-form">
+      <div class="info">
+        <h1>Sign Up</h1>
+        <button type="button"><i class="fa-brands fa-google"></i>Log in with Google</button>
+        <form id="form">
+          <div class="input">
+            <input id="fname" type="text" name="fullname" placeholder="Full Name" onkeydown="validateFname()" required>
+            <span id="fname-error"></span>
+          </div>
+          <div class="input">
+            <input id="email" type="email" name="Email" placeholder="Email" onkeydown="validateEmail()" required>
+            <span id="email-error"></span>
+          </div>
+          <div class="input">
+            <input id="pass" type="password" name="Password" placeholder="Password" onkeydown="validatePass()" required>
+            <span id="password-error"></span>
+          </div>
+        </form>     
+        <input type="checkbox"> <label>  Agree to our  </label>
+        <a href="">Terms</a> <label> and </label> <a href="">Conditions</a>
+        <button onclick="validateSubmit()" type="submit" value="login" id="signup-btn">Sign Up</button>
+        <span id="submit-error"></span>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+
+</html>
