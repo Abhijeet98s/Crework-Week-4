@@ -125,3 +125,52 @@ a.signup-button:hover {
 .input span i {
   color: #00d84a;
 }
+.success {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  background-color: #fff;
+  padding: 20px 40px;
+  border-radius: 5px;
+  border-left: 6px solid #b4161b;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.success.alert {
+  opacity: 1;
+  pointer-events: auto;
+}
+.success.show {
+  animation: show_slide 1s ease-in-out;
+}
+.success.hide {
+  animation: show_slide 1s ease-in-out;
+}
+.check {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  font-size: 25px;
+  color: greenyellow;
+}
+.msg {
+  font-size: 10px;
+  color: #00d84a;
+  margin: 0 20px;
+}
+@keyframes show_slide {
+  0% {
+    transform: translateX(100%);
+  }
+  40% {
+    transform: translateX(-10%);
+  }
+  80% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-20px);
+  }
+}
